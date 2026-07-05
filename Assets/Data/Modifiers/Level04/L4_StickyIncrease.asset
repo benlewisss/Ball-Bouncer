@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c775c43c592e71f40811f76563895c5d, type: 3}
+  m_Name: L4_StickyIncrease
+  m_EditorClassIdentifier: Assembly-CSharp::StickyModifier
+  modifierName: Glue
+  effectDescription: Coats in a sticky surface
+  modifierColor: {r: 0.7613968, g: 1, b: 0.042452812, a: 1}
+  modifierMaterial: {fileID: 0}
+  _breakFreeSpeed: 7.5
+  _damping: 30

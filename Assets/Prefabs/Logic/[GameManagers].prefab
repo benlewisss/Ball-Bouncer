@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &508712504379173181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1637487123019602163}
+  - component: {fileID: 3374497998327753962}
+  - component: {fileID: 3448139800303033961}
+  - component: {fileID: 1670212293668227016}
+  - component: {fileID: 2501003656644450874}
+  - component: {fileID: 5846703759710325884}
+  - component: {fileID: 2374223918852395851}
+  m_Layer: 0
+  m_Name: '[GameManagers]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1637487123019602163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508712504379173181}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.18425, y: -0.57059, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3374497998327753962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508712504379173181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65f4ffc2781c5bf488b3d9076a033a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameStateManager
+  _inputManager: {fileID: 1670212293668227016}
+  _ball: {fileID: 0}
+  _levelEndChannel: {fileID: 11400000, guid: 967b11c04f6c55a4a97024134dd752d1, type: 2}
+  _cameraShake: {fileID: 0}
+  _loseSound: {fileID: 11400000, guid: be62a50a318ea3e40a409525c391a95f, type: 2}
+  _audioChannel: {fileID: 11400000, guid: c686781a010cc854d9e4bfea98ae443e, type: 2}
+--- !u!114 &3448139800303033961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508712504379173181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f8451e7f1858c45988d709b334dd72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
+  _inputManager: {fileID: 1670212293668227016}
+  _stateManager: {fileID: 3374497998327753962}
+  _selectionEventChannel: {fileID: 11400000, guid: a0a7e582e0a453048a47f7e958569239, type: 2}
+  _modifierApplySound: {fileID: 11400000, guid: aed8e635a3f1a0644996615b94a6a460, type: 2}
+  _modifierRemoveSound: {fileID: 11400000, guid: 61c64f10c622d8942b9bca4deded6351, type: 2}
+  _audioChannel: {fileID: 11400000, guid: c686781a010cc854d9e4bfea98ae443e, type: 2}
+--- !u!114 &1670212293668227016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508712504379173181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e21bb080510994a8ea24be0a586357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InputManager
+--- !u!114 &2501003656644450874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508712504379173181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d06387fc0f76640b6c43452f3130b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
+  _initialAllocations:
+  - modifier: {fileID: 0}
+    startingCount: 0
+--- !u!114 &5846703759710325884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508712504379173181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 996a5df2af3116c4d85763f09fc39fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelScoreManager
+  _stateManager: {fileID: 3374497998327753962}
+  _baseScore: 1000
+  _timePenaltyPerSecond: 50
+  _pointsPerModifier: 0
+  _starBonus: 450
+  _gradeThresholds:
+  - grade: A+
+    minimumScore: 1980
+  - grade: A
+    minimumScore: 1900
+  - grade: B
+    minimumScore: 1800
+  - grade: C
+    minimumScore: 1400
+  - grade: D
+    minimumScore: 1000
+  - grade: F
+    minimumScore: 700
+--- !u!114 &2374223918852395851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508712504379173181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 719500a36b024bf4ca537753a1d8dbf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  _audioCueChannel: {fileID: 11400000, guid: c686781a010cc854d9e4bfea98ae443e, type: 2}
